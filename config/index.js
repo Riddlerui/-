@@ -23,19 +23,25 @@ module.exports = {
   },
   dev: {
     env: require('./dev.env'),
-    port: 9002,
+    port: 9001,
     autoOpenBrowser: true,
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
       '/newh5/web/activity': {
-
+        // target: 'http://dtest1-store.xybaitiao.com',
+        // target: 'http://192.168.8.101/lixue/store.com ',
+        target: 'http://www.baidu.com',
         changeOrigin: true
       },
       '/frontend': {
+        // target: 'http://dtest1-store.xybaitiao.com',
+        target: 'http://www.baidu.com',
         changeOrigin: true
       },
       '/shore/web/': {
+        // target: 'http://dtest1-store.xybaitiao.com',
+        target: 'http://www.baidu.com',
         changeOrigin: true
       }
     },

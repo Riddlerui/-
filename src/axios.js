@@ -26,7 +26,7 @@ function http(type, url, params, contentType) {
             axios({
                 method: 'post',
                 url: url,
-                headers: { 'Content-Type': contentTypeUse},
+                headers: { 'Content-Type': contentTypeUse, 'packname': 'xyyp'},
                 data: paramsUse
             }).then((res) => {
                 resolve(res.data)
